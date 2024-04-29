@@ -2,7 +2,7 @@
   "name": "popoyoko-ui-token-generator",
   "version": "1.0.0",
   "description": "Consume tokens and create your own theme ",
-  "main": "index.ts",
+  "main": "build/index.js",
   "author": "Popoyoko",
   "license": "MIT",
   "dependencies": {
@@ -15,7 +15,10 @@
     "style-dictionary": "^3.9.2"
   },
   "scripts": {
-    "build": "bun index.ts",
-    "build:tokens": "bun build-tokens.cjs"
+    "build": "tsc",
+    "build:tokens": "bun index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   }
 }
